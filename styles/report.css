@@ -22,8 +22,8 @@ html {
 /* !------------- MENUBAR STYLING -------------! */
 #header {
   width: 100vw;
-  height: 100vh;
-  background-image: url(../images/home-bg.jpg);
+  height: 40vh;
+  background-image: url(../images/report-bg.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -36,7 +36,7 @@ html {
 
 .header-text h1 {
   font-size: 5vw;
-  text-align: center;
+  text-align: right;
 }
 
 .logo {
@@ -50,7 +50,7 @@ html {
 }
 
 .logo:hover {
-  background: #f6f5d9;
+  background: #d5e2eb;
   cursor: default;
 }
 
@@ -60,7 +60,7 @@ nav {
   bottom: 0;
   height: 100vh;
   left: 0;
-  background: #f6f5d9;
+  background: #d5e2eb;
   width: 90px;
   overflow: hidden;
   transition: width 0.2s linear;
@@ -82,7 +82,7 @@ a {
 }
 
 a:hover {
-  background: #ced3b3;
+  background: #bac6ce;
 }
 
 .fas {
