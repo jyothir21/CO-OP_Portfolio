@@ -20,6 +20,7 @@ html {
 }
 
 /* !------------- MENUBAR STYLING -------------! */
+
 #header {
   width: 100vw;
   height: 40vh;
@@ -58,7 +59,7 @@ nav {
   position: absolute;
   top: 0;
   bottom: 0;
-  height: 100vh;
+  height: 200vh;
   left: 0;
   background: #d5e2eb;
   width: 90px;
@@ -126,6 +127,11 @@ img {
   border-right: 20px solid #75c8f4;
 }
 
+.report .card.active::before {
+  border-top: 20px solid #cf6666;
+  border-right: 20px solid #cf6666;
+}
+
 .icon {
   margin-bottom: 20px;
 }
@@ -136,6 +142,10 @@ img {
   overflow: hidden;
 }
 
+.report .card.active .content {
+  height: auto;
+}
+
 .report .card .content::before {
   content: "";
   position: absolute;
@@ -144,6 +154,10 @@ img {
   width: 100%;
   height: 100px;
   background: linear-gradient(transparent, #d5e2eb);
+}
+
+.report .card.active .content::before {
+  display: none;
 }
 
 .report .card .content h3 {
@@ -173,6 +187,14 @@ img {
   text-align: center;
 }
 
+.report .card.active .more {
+  background: #cf6666;
+}
+
 .report .card .more::before {
   content: "Read More";
+}
+
+.report .card.active .more::before {
+  content: "Read Less";
 }
