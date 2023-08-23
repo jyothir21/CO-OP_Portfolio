@@ -101,7 +101,7 @@ nav a:hover {
   margin-left: 10px;
 }
 
-#divider{
+#divider {
   background-color: #645953;
   width: 100%;
   height: 10px;
@@ -191,6 +191,7 @@ nav a:hover {
 
 .blog-box:hover .blog-box-img a {
   display: flex;
+  cursor: pointer;
 }
 
 .blog-box:hover .blog-box-img img {
@@ -279,4 +280,56 @@ nav a:hover {
   .blog-box-container {
     grid-template-columns: 1fr;
   }
+}
+
+/* !Popup */
+.popup .overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup .content {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #c6cfd3;
+  width: 80vw;
+  height: 150vh;
+  z-index: 2;
+  text-align: center;
+  padding: 50px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.popup .close-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup.active .overlay {
+  display: block;
+}
+
+.popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
 }
