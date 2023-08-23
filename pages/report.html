@@ -57,12 +57,50 @@
           <h1>Workterm Reports</h1>
         </div>
       </div>
-
-      
     </div>
 
+    <div id="divider"></div>
+
+    <section id="blog">
+      <!-- Blog Reports Container -->
+      <div class="blog-box-container">
+        <!-- Report Box -->
+        <div class="blog-box">
+          <!-- Box Image -->
+          <div class="blog-box-img">
+            <img src="../images/EA-logo.jpg" alt="report1 image" />
+            <a href="#" class="blog-img-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <!-- Box Text -->
+          <div class="blog-box-text">
+            <strong>Electronic Arts (EA)</strong>
+            <a href="#"> Work Term Report #1</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+              voluptatum nesciunt saepe? Aspernatur eos tenetur voluptates,
+              doloremque perspiciatis incidunt inventore praesentium suscipit
+              assumenda explicabo quidem provident quas soluta, harum quod?
+            </p>
+            <!-- Author -->
+            <div class="blog-author">
+              <div class="blog-author-img">
+                <img src="../images/b1.jpg" alt="" />
+              </div>
+              <div class="blog-author-text">
+                <strong>Jyothir</strong>
+                <span>Aug 23, 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Reports -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="report">
         <div class="card">
           <div class="icon">
@@ -202,13 +240,13 @@
           <a class="more"></a>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script>
-      let more = document.querySelectorAll('.more');
-      for (let i = 0; i < more.length; i++){
-        more[i].addEventListener('click', function(){
-          more[i].parentNode.classList.toggle('active');
+      let more = document.querySelectorAll(".more");
+      for (let i = 0; i < more.length; i++) {
+        more[i].addEventListener("click", function () {
+          more[i].parentNode.classList.toggle("active");
         });
       }
     </script>
