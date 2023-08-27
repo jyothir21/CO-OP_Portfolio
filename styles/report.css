@@ -71,10 +71,10 @@ html {
 }
 
 nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
-  height: 128.5vh;
+  height: 100%;
   left: 0;
   background: #d5e2eb;
   width: 90px;
@@ -129,17 +129,17 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 0px;
-  /* background-color: #cbdbe8; */
-  background: linear-gradient(to right, #cbdbe8 0, #b2c1cd 50%, #cbdbe8 100%);
-  /* background: linear-gradient(to right, #b2c1cd 0, #d5e2eb 30%, #b2c1cd 60%); */
+  padding: 50px;
+  height: 100vh;  
+  background: linear-gradient(to right, #cbdbe8 0, #b2c1cd 50%, #cbdbe8 100%);  
 }
 
 .blog-box-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
+  height: 100%;
 
   /* *Once you have more than one report
     display: grid;
@@ -156,7 +156,7 @@ nav a:hover {
       max-width: 100%; 
   */
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -185,6 +185,7 @@ nav a:hover {
   object-fit: cover;
   object-position: center;
   transition: all ease 0.3s;
+  cursor: pointer;
 }
 
 .blog-img-link {
@@ -315,12 +316,12 @@ nav a:hover {
 
 .popup .content {
   position: absolute;
-  top: 62%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background: #c6cfd3;
   width: 80vw;
-  height: 115vh;
+  height: 100vh;
   z-index: 2;
   text-align: left;
   padding: 50px;
@@ -465,4 +466,18 @@ li.curved-arrow::after {
 .popup.active .content {
   transition: all 300ms ease-in-out;
   transform: translate(-50%, -50%) scale(1);
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 3vh 0;
+  background: #c6cfd3;
+  font-weight: 300;
+  /* margin-top: 20px; */
+  height: 6.7vh;
+}
+
+.copyright span {
+  color: #2e7a8f;
 }
