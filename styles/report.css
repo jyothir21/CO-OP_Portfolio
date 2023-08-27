@@ -131,7 +131,7 @@ nav a:hover {
   align-items: center;
   padding: 50px;
   height: 100vh;  
-  background: linear-gradient(to right, #cbdbe8 0, #b2c1cd 50%, #cbdbe8 100%);  
+  background: linear-gradient(to right, #cbdbe8 0, #b2c1cd 50%, #cbdbe8 100%); 
 }
 
 .blog-box-container {
@@ -139,7 +139,11 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-bottom: 40px;
   height: 100%;
+  padding-top: 1vh;
+  padding-left: 8vw;
+  padding-right: 3vw;
 
   /* *Once you have more than one report
     display: grid;
@@ -148,6 +152,28 @@ nav a:hover {
     max-width: 1050px;
     width: 90%;
   */
+}
+
+#blog .container h1 {
+  color: #2e7a8f;
+  font-size: 3rem;
+  font-weight: 800;
+  /* padding-bottom: 0.5em;   */
+  text-align: center;
+  border: 10px solid red;
+  /* margin-top: 120px; */  
+}
+
+#blog .container p {
+  color: #5b838f;
+  font-family: "Noticia Text";
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 5%;
+  line-height: 1.5;
+  /* padding-bottom: 1em; */
+  /* width: 75vw; */
+  border: 10px solid green;
 }
 
 .blog-box {
