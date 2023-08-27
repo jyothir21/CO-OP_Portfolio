@@ -130,18 +130,18 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  height: 100vh;  
-  background: linear-gradient(to right, #cbdbe8 0, #b2c1cd 50%, #cbdbe8 100%); 
+  /* height: 100vh;   */
+  background: linear-gradient(to right, #cbdbe8 0, #b2c1cd 50%, #cbdbe8 100%);
 }
 
 .blog-box-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 40px;
-  height: 100%;
-  padding-top: 1vh;
+  /* height: 100%; */
+  /* padding-top: 1vh; */
   padding-left: 8vw;
   padding-right: 3vw;
 
@@ -154,26 +154,27 @@ nav a:hover {
   */
 }
 
-#blog .container h1 {
+#test {
+  background: linear-gradient(to right, #cbdbe8 0, #b2c1cd 50%, #cbdbe8 100%);
+}
+
+#test h1 {
   color: #2e7a8f;
   font-size: 3rem;
   font-weight: 800;
-  /* padding-bottom: 0.5em;   */
   text-align: center;
-  border: 10px solid red;
-  /* margin-top: 120px; */  
+  margin-top: 2vh;
 }
 
-#blog .container p {
+#test p {
   color: #5b838f;
   font-family: "Noticia Text";
-  font-size: 20px;
-  text-align: justify;
-  text-indent: 5%;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 1vh;
+  margin-left: 14vw;
   line-height: 1.5;
-  /* padding-bottom: 1em; */
-  /* width: 75vw; */
-  border: 10px solid green;
+  width: 60vw;
 }
 
 .blog-box {
@@ -342,12 +343,12 @@ nav a:hover {
 
 .popup .content {
   position: absolute;
-  top: 70%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background: #c6cfd3;
   width: 80vw;
-  height: 100vh;
+  height: 90vh;
   z-index: 2;
   text-align: left;
   padding: 50px;
