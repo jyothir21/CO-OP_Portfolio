@@ -380,15 +380,8 @@ nav a:hover {
   text-indent: 5%;
   line-height: 1.5;
   padding-bottom: 1em;
-}
-
-.popup .content ol {
-  color: #5b838f;
-  font-family: "Noticia Text";
-  text-align: justify;
-  line-height: 1.5;
-  margin: 5px 0 15px;
-  padding: 0;
+  margin-left: 2vw;
+  width: 93%;
 }
 
 .goal {
@@ -403,10 +396,11 @@ nav a:hover {
   padding-left: 1.5rem;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
+  margin-left: 5vw;
   color: #5b838f;
   font-family: "Noticia Text";
   font-size: 20px;
-  width: 95%;
+  width: 85%;
 }
 
 .goal li strong {
@@ -472,9 +466,9 @@ li.curved-arrow::after {
 
 .popup .close-btn {
   cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  position: sticky;
+  left: 75vw;
+  top: 1vh;
   width: 30px;
   height: 30px;
   background: #2e7a8f;
