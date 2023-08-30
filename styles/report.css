@@ -462,6 +462,7 @@ li.curved-arrow::after {
   width: 12px;
   height: 12px;
   transform: rotate(45deg);
+  transition: transform 0.9s;
 }
 
 .popup .close-btn {
@@ -478,6 +479,10 @@ li.curved-arrow::after {
   line-height: 30px;
   text-align: center;
   border-radius: 50%;
+}
+
+.popup .close-btn:hover {
+  transform: translateY(-5px);
 }
 
 .popup.active .overlay {
