@@ -58,5 +58,112 @@
         </div>
       </div>
     </div>
+
+    <div id="divider"></div>
+
+    <div id="filler"></div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Reach Out!!!</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>kris.jyothir@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>437-224-3655</p>
+            <div class="social-icons">
+              <a href="https://twitter.com/jyothir_21" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="kris.jyothir@gmail.com"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/jyothir-krishnan/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/jyothir21" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="resumeFiles/Jyothir_Krishnan_Resume.pdf"
+              download
+              class="btn btn2"
+              >Download my Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form
+              name="submit-to-google-sheet"
+              onsubmit="sendEmail(); reset(); return false"
+            >
+              <input
+                id="name"
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                id="email"
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                id="message"
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div id="filler"></div>
+
+      <div class="copyright">
+        <p><span>&copy</span> Jyothir Krishnan 2022. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+      //   Email.send({
+      //     Host: "smtp.elasticemail.com",
+      //     Username: "kris.jyothir@gmail.com",
+      //     Password: "0B7C5E73E05220BD167D414D9651BF67941A",
+      //     To: "kris.jyothir@gmail.com",
+      //     From: "kris.jyothir@gmail.com",
+      //     Subject: "CO-OP Website Contact Form",
+      //     Body:
+      //       "Name: " +
+      //       document.getElementById("name").value +
+      //       "\nEmail: " +
+      //       document.getElementById("email").value +
+      //       "\nMessage: " +
+      //       document.getElementById("message").value,
+      //   }).then((message) => alert("Message Sent Successfully!"));
+      // }
+
+      Email.send({
+        SecureToken: "1cb95014-a2b3-4fb4-9d2c-ace678621fa4",
+        To: "kris.jyothir@gmail.com",
+        From: "kris.jyothir@gmail.com",
+        Subject: "CO-OP Website Contact Form",
+        Body:
+          "Name: " +
+          document.getElementById("name").value +
+          "\nEmail: " +
+          document.getElementById("email").value +
+          "\nMessage: " +
+          document.getElementById("message").value,
+      }).then((message) => alert(message));}
+    </script>
   </body>
 </html>

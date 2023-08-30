@@ -212,7 +212,7 @@ nav a:hover {
   object-fit: cover;
   object-position: center;
   transition: all ease 0.3s;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .blog-img-link {
