@@ -128,6 +128,8 @@
       </div>
     </div>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
       function sendEmail() {
@@ -139,11 +141,18 @@
           Body:
             "Name: " +
             document.getElementById("name").value +
-            "\nEmail: " +
+            "\r\nEmail: " +
             document.getElementById("email").value +
-            "\nMessage: " +
+            "\r\nMessage: " +
             document.getElementById("message").value,
-        }).then((message) => alert(message));
+        }).then((message) =>
+          swal({
+            title: "Message Sent Successfully!",
+            text: "Thanks for Contacting!",
+            icon: "success",
+            button: "Close",
+          })
+        );
       }
     </script>
   </body>
