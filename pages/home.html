@@ -15,10 +15,16 @@
   <body>
     <!-- !------------- HOME PAGE -------------! -->
     <div id="header">
+      <a
+        href="https://jyothir21.github.io/CO-OP_Portfolio/pages/home.html"
+        class="logo out"
+      >
+        <img src="../images/logo.png" />
+      </a>
       <div class="container">
         <!-- Menu Bar -->
-        <nav>
-          <ul id="menu">
+        <nav id="menuList">
+          <ul>
             <!-- Logo -->
             <li>
               <a
@@ -54,6 +60,12 @@
             </li>
           </ul>
         </nav>
+        <i class="fa-solid fa-bars" id="menuOpenIcon" onclick="openmenu()"></i>
+        <i
+          class="fa-solid fa-square-xmark"
+          id="menuCloseIcon"
+          onclick="closemenu()"
+        ></i>
 
         <!-- Intro Text -->
         <div class="header-text">
@@ -62,5 +74,36 @@
         </div>
       </div>
     </div>
+
+    <script>
+      var menuOptions = document.getElementById("menuList");
+      var open = document.getElementById("menuOpenIcon");
+      var close = document.getElementById("menuCloseIcon");
+
+      if (screen.width > 600) {
+        menuOptions.style.maxHeight = "100%";
+      } else {
+        menuOptions.style.maxHeight = "0%";
+      }
+
+      function openmenu() {
+        menuOptions.style.maxHeight = "45%";
+        open.style.display = "none";
+        close.style.display = "block";
+      }
+
+      function sleep(milliseconds) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+      }
+      async function delayOpenMenu() {
+        await sleep(300);
+        open.style.display = "block";
+      }
+
+      function closemenu() {
+        close.style.display = "none";
+        delayOpenMenu();
+      }
+    </script>
   </body>
 </html>

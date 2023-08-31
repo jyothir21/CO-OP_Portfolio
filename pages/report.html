@@ -14,8 +14,8 @@
     <div id="header">
       <div class="container">
         <!-- Menu Bar -->
-        <nav>
-          <ul id="menu">
+        <nav id="menuList">
+          <ul>
             <!-- Logo -->
             <li>
               <a
@@ -51,6 +51,12 @@
             </li>
           </ul>
         </nav>
+        <i class="fa-solid fa-bars" id="menuOpenIcon" onclick="openmenu()"></i>
+        <i
+          class="fa-solid fa-square-xmark"
+          id="menuCloseIcon"
+          onclick="closemenu()"
+        ></i>
 
         <!-- Intro Text -->
         <div class="header-text">
@@ -81,7 +87,7 @@
         <div class="blog-box">
           <!-- Box Image -->
           <div class="blog-box-img">
-            <img src="../images/EA-logo.jpg"/>
+            <img src="../images/EA-logo.jpg" />
             <a href="#" onclick="togglePopup()" class="blog-img-link">
               <i class="fa-solid fa-arrow-up-right-from-square"></i>
             </a>
@@ -389,6 +395,34 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
         setTimeout(showSlides, 5000); // Change image every 2 seconds
+      }
+    </script>
+
+    <script>
+      var menuOptions = document.getElementById("menuList");
+      var open = document.getElementById("menuOpenIcon");
+      var close = document.getElementById("menuCloseIcon");
+
+      menuOptions.style.maxHeight = "0%";
+
+      function openmenu() {
+        menuList.style.maxHeight = "45%";
+        open.style.display = "none";
+        close.style.display = "block";
+      }
+
+      function sleep(milliseconds) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+      }
+      async function delayOpenMenu() {
+        await sleep(300);
+        open.style.display = "block";
+      }
+
+      function closemenu() {
+        close.style.display = "none";
+        menuList.style.maxHeight = "0%";
+        delayOpenMenu();
       }
     </script>
   </body>

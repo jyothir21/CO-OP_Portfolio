@@ -14,8 +14,8 @@
     <div id="header">
       <div class="container">
         <!-- Menu Bar -->
-        <nav>
-          <ul id="menu">
+        <nav id="menuList">
+          <ul>
             <!-- Logo -->
             <li>
               <a
@@ -51,6 +51,12 @@
             </li>
           </ul>
         </nav>
+        <i class="fa-solid fa-bars" id="menuOpenIcon" onclick="openmenu()"></i>
+        <i
+          class="fa-solid fa-square-xmark"
+          id="menuCloseIcon"
+          onclick="closemenu()"
+        ></i>
 
         <!-- Intro Text -->
         <div class="header-text">
@@ -153,6 +159,34 @@
             button: "Close",
           })
         );
+      }
+    </script>
+
+    <script>
+      var menuOptions = document.getElementById("menuList");
+      var open = document.getElementById("menuOpenIcon");
+      var close = document.getElementById("menuCloseIcon");
+
+      menuOptions.style.maxHeight = "0%";
+
+      function openmenu() {
+        menuList.style.maxHeight = "45%";
+        open.style.display = "none";
+        close.style.display = "block";
+      }
+
+      function sleep(milliseconds) {
+        return new Promise((resolve) => setTimeout(resolve, milliseconds));
+      }
+      async function delayOpenMenu() {
+        await sleep(300);
+        open.style.display = "block";
+      }
+
+      function closemenu() {
+        close.style.display = "none";
+        menuList.style.maxHeight = "0%";
+        delayOpenMenu();
       }
     </script>
   </body>
