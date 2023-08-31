@@ -163,30 +163,33 @@
     </script>
 
     <script>
-      var menuOptions = document.getElementById("menuList");
-      var open = document.getElementById("menuOpenIcon");
-      var close = document.getElementById("menuCloseIcon");
+      if (screen.width <= 600) {
+        var menuOptions = document.getElementById("menuList");
+        var open = document.getElementById("menuOpenIcon");
+        var close = document.getElementById("menuCloseIcon");
 
-      menuOptions.style.maxHeight = "0%";
+        menuOptions.style.maxHeight = "0px";
 
-      function openmenu() {
-        menuList.style.maxHeight = "45%";
-        open.style.display = "none";
-        close.style.display = "block";
-      }
+        function openmenu() {
+          menuOptions.style.maxHeight = "292px";
+          open.style.display = "none";
+          close.style.display = "block";
+        }
 
-      function sleep(milliseconds) {
-        return new Promise((resolve) => setTimeout(resolve, milliseconds));
-      }
-      async function delayOpenMenu() {
-        await sleep(300);
-        open.style.display = "block";
-      }
+        function sleep(milliseconds) {
+          return new Promise((resolve) => setTimeout(resolve, milliseconds));
+        }
+        async function delayOpenMenu() {
+          await sleep(300);
+          open.style.display = "block";
+        }
 
-      function closemenu() {
-        close.style.display = "none";
-        menuList.style.maxHeight = "0%";
-        delayOpenMenu();
+        function closemenu() {
+          close.style.display = "none";
+          menuOptions.style.maxHeight = "0px";
+
+          delayOpenMenu();
+        }
       }
     </script>
   </body>
