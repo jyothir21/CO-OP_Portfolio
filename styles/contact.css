@@ -296,26 +296,52 @@ form .btn2 {
     width: 20%;
   }
 
-  /* .header-text {
-    margin: 0;
+  #header {
+    height: 30vh;
+    background-size: auto;
   }
 
   .header-text h1 {
+    /* margin-left: 42vw; */
     font-size: 12vw;
+    /* width: 180px; */
+    text-align: center;
+    color: rgb(249, 246, 246);
+  }
+
+  .copyright,
+  .container span {
+    font-size: 12px;
+  }
+
+  .sub-title {
+    font-size: 40px;
     text-align: center;
   }
 
-  .header-text p {
-    margin-top: 1vh;
-    margin-right: 1vw;
-    text-align: center;
-    font-size: 5vw;
-  } */
+  .fa-paper-plane,
+  .fa-phone,
+  .contact-left .social-icons {
+    margin-left: 8vh;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+
+  .contact-left .btn.btn2 {
+    margin-left: 6vh;
+  }
+
+  .contact-right .btn.btn2 {
+    margin-left: 10vh;
+  }
 
   #menuOpenIcon {
     display: block;
     position: absolute;
-    color: rgb(85, 83, 83);
+    color: rgb(212, 212, 212);
     padding: 10px 15px 10px 10px;
     right: 10px;
     top: 21px;
