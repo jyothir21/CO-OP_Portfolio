@@ -743,7 +743,7 @@ li.curved-arrow::after {
   }
 
   #menuCloseIcon {
-    position: absolute;
+    position: fixed;
     color: rgb(85, 83, 83);
     padding: 10px;
     right: 10px;

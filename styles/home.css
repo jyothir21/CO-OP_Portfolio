@@ -130,18 +130,18 @@ a:hover {
 
   .logo {
     text-align: left;
-    width: 100%;    
+    width: 100%;
   }
 
   ul li a {
-    width: 100%;    
+    width: 100%;
   }
 
-  .fas{
+  .fas {
     padding-left: 110px;
   }
 
-  .nav-item{
+  .nav-item {
     padding-left: 30px;
   }
 
@@ -181,7 +181,7 @@ a:hover {
   }
 
   #menuCloseIcon {
-    position: absolute;
+    position: fixed;
     color: rgb(85, 83, 83);
     padding: 10px;
     right: 10px;
