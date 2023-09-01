@@ -662,8 +662,72 @@ li.curved-arrow::after {
     font-size: 10px;
   }
 
-  .copyright, .container span{
+  .copyright,
+  .container span {
     font-size: 12px;
+  }
+
+  .popup .content {
+    padding: 20px;
+  }
+
+  .popup .content h1 {
+    font-size: 18px;
+  }
+
+  .popup .content h1::after {
+    width: 8vw;
+    border-bottom: 6px solid #4e97ac;
+  }
+
+  .popup .content p {
+    font-size: 12px;
+  }
+
+  .goal {
+    padding-left: 0;
+  }
+
+  .goal li {
+    padding-left: 15px;
+    margin-left: 2vw;
+    font-size: 12px;
+    width: 95%;
+  }
+
+  .goal li strong {
+    font-size: 14px;
+  }
+
+  .goal li strong::after {
+    width: 6.5vw;
+  }
+
+  li.arrow::before {
+    height: 2.5px;
+    width: 2.5px;
+    border-width: 2px 2px 0 0;
+  }
+
+  li.curved-arrow::before {
+    border-top: 6px solid transparent;
+    border-right: 6px solid #4e97ac;
+  }
+
+  li.curved-arrow::after {
+    width: 10px;
+    height: 10px;
+  }
+
+  .popup .close-btn {
+    position: fixed;
+    top: 15px;
+    left: 90%;    
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;    
   }
 
   #menuOpenIcon {
