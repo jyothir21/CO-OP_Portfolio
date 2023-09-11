@@ -584,6 +584,7 @@ li.curved-arrow::after {
     text-align: left;
     overflow: hidden;
     transition: 0.5s;
+    z-index: 2;
   }
 
   .logo {
@@ -722,12 +723,12 @@ li.curved-arrow::after {
   .popup .close-btn {
     position: fixed;
     top: 15px;
-    left: 90%;    
+    left: 90%;
     width: 20px;
     height: 20px;
     font-size: 18px;
     font-weight: 300;
-    line-height: 20px;    
+    line-height: 20px;
   }
 
   #menuOpenIcon {
@@ -749,5 +750,6 @@ li.curved-arrow::after {
     right: 10px;
     top: 21px;
     font-size: 2rem;
+    z-index: 2;
   }
 }
