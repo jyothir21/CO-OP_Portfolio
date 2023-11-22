@@ -135,7 +135,8 @@ nav a:hover {
 }
 
 .blog-box-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* to add more columns, just add more 1fr's */
   justify-content: center;
   align-items: center;
   /* margin-top: 20px; */
@@ -144,14 +145,6 @@ nav a:hover {
   /* padding-top: 1vh; */
   padding-left: 8vw;
   padding-right: 3vw;
-
-  /* *Once you have more than one report
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 50px;
-    max-width: 1050px;
-    width: 90%;
-  */
 }
 
 #intro {
@@ -179,9 +172,6 @@ nav a:hover {
 
 .blog-box {
   max-width: 350px;
-  /* *Once you have more than one report
-      max-width: 100%; 
-  */
   width: 100%;
   height: auto;
   padding: 10px;
@@ -190,6 +180,7 @@ nav a:hover {
   transition: all ease 0.3s;
   background-color: #cbdbe8;
   border-radius: 10px;
+  margin-left: 50px;
 }
 
 .blog-box:hover {
@@ -316,7 +307,7 @@ nav a:hover {
 @media (max-width: 920px) {
   .blog-box-container {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 0px;
+    grid-gap: 20px 0px;
   }
 }
 @media (max-width: 600px) {
@@ -645,6 +636,7 @@ li.curved-arrow::after {
     */
     width: 100%;
     height: 450px;
+    margin-left: 0;
   }
 
   .blog-box-text strong,
