@@ -136,7 +136,7 @@ nav a:hover {
 
 .blog-box-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* to add more columns, just add more 1fr's */
+  grid-template-columns: 1fr 1fr 1fr; /* to add more columns, just add more 1fr's */
   justify-content: center;
   align-items: center;
   /* margin-top: 20px; */
