@@ -81,6 +81,7 @@ nav {
   overflow: hidden;
   transition: width 0.2s linear;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 
 nav:hover {
@@ -181,6 +182,8 @@ nav a:hover {
   background-color: #cbdbe8;
   border-radius: 10px;
   margin-left: 50px;
+  margin: 10px;
+  content: none;
 }
 
 .blog-box:hover {
@@ -328,7 +331,7 @@ nav a:hover {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  z-index: 2;
   display: none;
 }
 
